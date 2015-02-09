@@ -1,6 +1,6 @@
 ## Notebooks for CSCAR Python data management and analysis workshop
 
-+ Basic data struture manipulations [notebook](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Basic/Indexing_arrays_and_matrices.ipynb)
++ Basic data struture manipulations ([notebook](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Basic/Indexing_arrays_and_matrices.ipynb))
 
 + Daily weather data from the NCDC Global Surface Network
 
@@ -86,6 +86,10 @@
 + Regression graphics ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/lw8pzvzgi9bq5baaca0i4e2dfhsqmm80.ipynb))
 
 + Gamma GLM ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/n0nsh9d765t3snl907vc.ipynb))
+
++ Logistic regression analysis of low birth weight data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/20nyq9kap75rhet9eujh.ipynb))
+
++ Poisson and negative binomial regression analysis of fish abundance data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/0lgt5635uo6rhakjj9d5.ipynb))
 
 #### Scatterplot smoothing (lowess)
 
