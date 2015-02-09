@@ -4,27 +4,27 @@
 
 + Daily weather data from the NCDC Global Surface Network
 
-  - Link to [source data](ftp://ftp.ncdc.noaa.gov/pub/data/ghcn/daily/) at NCDC
+    - Link to [source data](ftp://ftp.ncdc.noaa.gov/pub/data/ghcn/daily/) at NCDC
 
-  - Main analysis [(notebook)](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/yswkatnuxkkc32desjz5a3qnxvmw7m27.ipynb)
+    - Main analysis [(notebook)](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/yswkatnuxkkc32desjz5a3qnxvmw7m27.ipynb)
 
 + Spatial analysis of birth and death locations of notable people
 
-  - [Source article](http://www.sciencemag.org/content/345/6196/558.full)
+    - [Source article](http://www.sciencemag.org/content/345/6196/558.full)
 
-  - Small data conversion script [(notebook)](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Cultural_history/convert_to_csv.ipynb)
+    - Small data conversion script [(notebook)](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Cultural_history/convert_to_csv.ipynb)
 
-  - Main analysis [(notebook)](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/p4yki3aq1f8l6hl3cuhc1a880vk7qtnc.ipynb)
+    - Main analysis [(notebook)](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/p4yki3aq1f8l6hl3cuhc1a880vk7qtnc.ipynb)
 
 + US 2012 Medicare payment data
 
-  - Subset the data by state [(notebook)](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Medicare/state_subset.ipynb)
+    - Subset the data by state [(notebook)](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Medicare/state_subset.ipynb)
 
-  - Drill-down: identify providers receiving high payments [(notebook)](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Medicare/high_payment_providers.ipynb)
+    - Drill-down: identify providers receiving high payments [(notebook)](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Medicare/high_payment_providers.ipynb)
 
-  - Compare provider types by state [(notebook)](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Medicare/compare_provider_types_state.ipynb)
+    - Compare provider types by state [(notebook)](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Medicare/compare_provider_types_state.ipynb)
 
-  - Associations beween provider type and service type [(notebook)](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Medicare/provider_service_assoc.ipynb)
+    - Associations beween provider type and service type [(notebook)](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Medicare/provider_service_assoc.ipynb)
 
 
 ## Notebooks for CSCAR Python regression workshop
