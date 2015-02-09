@@ -1,0 +1,10 @@
+import markdown
+import os
+
+
+md_files = os.listdir(".")
+md_files = [x for x in md_files if x.endswith(".md")]
+
+for md_file in md_files:
+
+    md = open(md_file).read()
