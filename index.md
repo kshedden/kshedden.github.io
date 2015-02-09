@@ -15,7 +15,7 @@
 
 #### Multiple testing and False Discovery Rates
 
-+ Differential expression analysis of gene expression data [HTML View] (http://nbviewer.ipython.org/urls/umich.box.com/shared/static/7kh8amlez7bx3qlqa6aa.ipynb?create=1)
++ [Differential expression analysis of gene expression data](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/7kh8amlez7bx3qlqa6aa.ipynb?create=1)
 
 + Simulation study of FDR methods [HTML View]
 (http://nbviewer.ipython.org/urls/umich.box.com/shared/static/wtmzw5hmpe1pbb2cug6x.ipynb)
