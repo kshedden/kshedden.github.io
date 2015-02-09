@@ -2,9 +2,21 @@
 
 ## Notebooks for CSCAR Python data management and analysis workshop
 
++ Basic data struture manipulations [notebook](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Basic/Indexing_arrays_and_matrices.ipynb)
+
 + Daily weather data from NCDC [notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/yswkatnuxkkc32desjz5a3qnxvmw7m27.ipynb)
 
 + Spatial analysis of birth and death locations of notable people [notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/p4yki3aq1f8l6hl3cuhc1a880vk7qtnc.ipynb)
+
++ US 2012 Medicare payment data
+
+++ [notebook](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Medicare/state_subset.ipynb)
+
+++ [notebook](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Medicare/high_payment_providers.ipynb)
+
+++ [notebook](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Medicare/compare_provider_types_state.ipynb)
+
+++ [notebook](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Medicare/provider_service_assoc.ipynb)
 
 
 ## Notebooks for CSCAR Python regression workshop
