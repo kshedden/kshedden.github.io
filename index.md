@@ -26,14 +26,27 @@
 
     - Associations beween provider type and service type ([notebook](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Medicare/provider_service_assoc.ipynb))
 
+---
 
 ## Notebooks for CSCAR Python regression workshop
 
++ Regression analysis of the US house price index ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/vlrazg0wglamfqeqhp4y.ipynb))
 
++ Regression analysis of the NHANES blood pressure data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/qgse7s6x8wl7xzchliti.ipynb))
 
++ Logistic regression analysis of low birth weight data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/20nyq9kap75rhet9eujh.ipynb))
 
++ Poisson and negative binomial regression analysis of fish abundance data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/0lgt5635uo6rhakjj9d5.ipynb))
+
+---
 
 ## All notebooks by topic
+
+#### Linear regression
+
++ Regression analysis of the US house price index ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/vlrazg0wglamfqeqhp4y.ipynb))
+
++ Regression analysis of the NHANES blood pressure data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/qgse7s6x8wl7xzchliti.ipynb))
 
 #### Multiple testing and False Discovery Rates
 
@@ -48,7 +61,7 @@
 #### Dotplots (forest plots)
 
 + GDP by country ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/oxsz9tlg19clhzi422i4.ipynb),
-[data](https://umich.box.com/shared/static/uxpesc1pix3gedyecggp.csv)
+[data](https://umich.box.com/shared/static/uxpesc1pix3gedyecggp.csv))
 
 + Gas prices ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/oh717lkxczhseep71lao.ipynb))
 
