@@ -137,3 +137,5 @@
 + GEE simulation study for Poisson regression with overdispersion ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/y20u25cxot26kg0mbfys.ipynb))
 
 + GEE simulation study for regression with nominal data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/wwwlg3z8as0layod22lx.ipynb))
+
++ Baseline adjustment and GEE ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/jiua9do8pwqafvnhce31chmv1c9ym63i.ipynb))
