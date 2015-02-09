@@ -2,7 +2,9 @@
 
 ## Notebooks for CSCAR Python data management and analysis workshop
 
++ Daily weather data from NCDC [notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/yswkatnuxkkc32desjz5a3qnxvmw7m27.ipynb)
 
++ Spatial analysis of birth and death locations of notable people [notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/p4yki3aq1f8l6hl3cuhc1a880vk7qtnc.ipynb)
 
 
 ## Notebooks for CSCAR Python regression workshop
@@ -15,9 +17,9 @@
 
 #### Multiple testing and False Discovery Rates
 
-+ [Differential expression analysis of gene expression data](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/7kh8amlez7bx3qlqa6aa.ipynb)
++ Differential expression analysis of gene expression data [notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/7kh8amlez7bx3qlqa6aa.ipynb)
 
-+ [Simulation study of FDR methods](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/wtmzw5hmpe1pbb2cug6x.ipynb)
++ Simulation study of FDR methods [notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/wtmzw5hmpe1pbb2cug6x.ipynb)
 
 #### Predictive modeling
 
