@@ -1,6 +1,6 @@
 ## Notebooks for CSCAR Python data management and analysis workshop
 
-+ Basic data struture manipulations ([notebook](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Basic/Indexing_arrays_and_matrices.ipynb))
++ Basic data struture manipulations ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/a5ar3lppsrl3r62pqkqzkuy9vmjts11c.ipynb)
 
 + Daily weather data from the NCDC Global Surface Network
 
