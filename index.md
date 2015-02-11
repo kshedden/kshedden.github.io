@@ -1,9 +1,7 @@
+# CSCAR Python data management and analysis workshop
+
 [Background information](python_practicalities.html) regarding Python
 for data analysis and scientific computing.
-
-----
-
-# Notebooks for CSCAR Python data management and analysis workshop
 
 + Basic data struture manipulations ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/a5ar3lppsrl3r62pqkqzkuy9vmjts11c.ipynb))
 
@@ -33,7 +31,10 @@ for data analysis and scientific computing.
 
 ---
 
-# Notebooks for CSCAR Python regression workshop
+# CSCAR Python regression workshop
+
+[Background information](python_practicalities.html) regarding Python
+for data analysis and scientific computing.
 
 + Regression analysis of the US house price index ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/vlrazg0wglamfqeqhp4y.ipynb))
 
