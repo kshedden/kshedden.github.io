@@ -1,4 +1,4 @@
-## The core Python language
+# The core Python language
 
 There are many excellent Python tutorials on the web.  Some of our
 favorites are:
@@ -33,7 +33,7 @@ first-class objects, closures, and pass-by-reference semantics (most
 or all of this is available in R and Matlab in some way, but perhaps
 not very naturally or as the default).
 
-### Speed
+## Speed
 
 Python itself has rather poor numerical performance compared to
 compiled languages like C and Fortran. However Python has a large
@@ -58,7 +58,7 @@ calculations in such a way that most of the work takes place in the
 library (where time-critical components will already have been written
 in C).
 
-### What is distinctive about Python?
+## What is distinctive about Python?
 
 Python is not (and was not intended to be) an exotic or revolutionary
 language.  It should seem obvious and natural to anyone familiar with
@@ -66,7 +66,7 @@ generic "pseudo-code".  It has a few distinguishing features, most
 notably, the use of indentation rather than braces to define code
 blocks.
 
-### Python 2 versus Python 3
+## Python 2 versus Python 3
 
 The Python community is currently progressing through a transition
 from the "2 series" Python implementations to the "[3
@@ -163,7 +163,7 @@ Here are the libraries we discuss in our workshops:
 
 # Python installation
 
-### Installing from a distribution
+## Installing from a distribution
 
 Installing Python and its scientific libraries used from scratch is
 possible, but is challenging and time consuming.  The easiest way to
@@ -180,7 +180,7 @@ analytic work:
 
 * [Pyzo](http://www.pyzo.org)
 
-### Installing Python from source
+## Installing Python from source
 
 If you use Linux or MacOS and have a working compiler like gcc in your
 system, you can install core Python by first downloading the source
@@ -236,7 +236,7 @@ with when installing libraries to be accessed by that installation.
 If you are using Anaconda Python, you can use the command `conda` to
 install packages, e.g. `conda install numpy`.
 
-### Installing on Windows using binaries
+## Installing on Windows using binaries
 
 If you use Windows and have administrator access to your system, you
 can scour the web for the core language and various libraries in
