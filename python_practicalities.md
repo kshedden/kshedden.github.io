@@ -20,18 +20,18 @@ configurations.  The core language and libraries behave in a highly
 consistent way across a variety of platforms (Windows, Linux, Max,
 many others).
 
-Matlab and R are "domain specific languages" (DSL's).  They were
-primarily designed for one purpose.  Scientists who like to think of
-computer programs simply as sequences of calculations seem to prefer
-simple languages that translate mathematical logic directly into
-computer code.  Matlab and [Julia](http://julialang.org) reflect this
-perspective.  On the other hand, people who have learned some basic
-ideas from modern computer science often prefer a language that
-incorporates capabilities such as more advanced data structures
-(e.g. associative arrays), functions as first-class objects, closures,
-and pass-by-reference semantics (most or all of this is available in R
-and Matlab in some way, but perhaps not very naturally or as the
-default).
+Matlab and [R](http://cran.org) are "domain specific languages"
+(DSL's).  They were primarily designed for one purpose.  Scientists
+who like to think of computer programs simply as sequences of
+calculations seem to prefer simple languages that translate
+mathematical logic directly into computer code.  Matlab and
+[Julia](http://julialang.org) reflect this perspective.  On the other
+hand, people who have learned some basic ideas from modern computer
+science often prefer a language that incorporates capabilities such as
+more advanced data structures (e.g. associative arrays), functions as
+first-class objects, closures, and pass-by-reference semantics (most
+or all of this is available in R and Matlab in some way, but perhaps
+not very naturally or as the default).
 
 ### Speed
 
@@ -42,21 +42,21 @@ numerical performance on many problems.
 
 Due to the huge community of Python users, the core language and
 interpreter have been heavily optimized for performance.  Interpreted
-Python is generally faster than interpreted [R](http://cran.org).
-However, in any interpreted language, complicated operations will be
-somewhat slow.  Most generic operations in Python (like sorting a
-list) are implemented in C.  These generic operations will take
-roughly the same time to execute in any well-implemented language
-(e.g. R, Matlab, Python, C, Java).
+Python is generally faster than interpreted R.  However, in any
+interpreted language, complicated operations will be somewhat slow.
+Most generic operations in Python (like sorting a list) are
+implemented in C.  These generic operations will take roughly the same
+time to execute in any well-implemented language (e.g. R, Matlab,
+Python, C, Java).
 
 It is possible to write C extensions to Python.  This is made
-particularly easy by using a tool called
-"[Cython](http://cython.org)".  However, most users will rarely if
-ever need to use Cython.  Due to the availability of excellent Python
-libraries such as [Numpy](http://www.numpy/org), it is often possible
-to express complex calculations in such a way that most of the work
-takes place in the library (where time-critical components will
-already have been written in C).
+particularly easy by using a tool called [Cython](http://cython.org).
+However, most users will rarely if ever need to use Cython.  Due to
+the availability of excellent Python libraries such as
+[Numpy](http://www.numpy.org), it is often possible to express complex
+calculations in such a way that most of the work takes place in the
+library (where time-critical components will already have been written
+in C).
 
 ### What is distinctive about Python?
 
@@ -145,19 +145,19 @@ structures to be manipulated in the most natural way.
 
 Here are the libraries we discuss in our workshops:
 
-* __Pandas__ (http://pandas.pydata.org): data management
+* [Pandas](http://pandas.pydata.org): data management
 
-* __Matplotlib__ (http://matplotlib.org): graphics and plotting
+* [Matplotlib](http://matplotlib.org): graphics and plotting
 
-* __Statsmodels__ (http://statsmodels.sourceforge.net): statistical
+* [Statsmodels](http://statsmodels.sourceforge.net): statistical
   models and data analysis tools
 
-* __Numpy__ (http://www.numpy.org): array processing and linear
-  algebra, front end to a subset of Lapack, provides matrix algebra
+* [Numpy](http://www.numpy.org): array processing and linear algebra,
+  front end to a subset of Lapack, provides matrix algebra
   functionality similar to Matlab and R (but with some different
   syntax).
 
-* __Scipy__ (http://www.scipy.org): numerical routines such as
+* [Scipy](http://www.scipy.org): numerical routines such as
   integration, optimization, and special functions
 
 
@@ -172,13 +172,13 @@ service, or to install a bundled distribution of the scientific Python
 stack.  Here are some Python distributions that are suitable for data
 analytic work:
 
-* Enthought Canopy (https://www.enthought.com/products/canopy)
+* [Enthought Canopy](https://www.enthought.com/products/canopy)
 
-* Continuum Anaconda (http://continuum.io/downloads)
+* [Continuum Anaconda](http://continuum.io/downloads)
 
-* Python-xy (https://code.google.com/p/pythonxy/) -- Windows only
+* [Python-xy](https://code.google.com/p/pythonxy/) -- Windows only
 
-* Pyzo (http://www.pyzo.org)
+* [Pyzo](http://www.pyzo.org)
 
 ### Installing Python from source
 
@@ -225,7 +225,7 @@ want to link to the libraries (i.e. if you have installed several
 Pythons, you need to use the right one here).
 
 An alternative way to install the libraries (but not Python itself) is
-to use pip (https://pypi.python.org/pypi/pip).  To install numpy, for
+to use [pip](https://pypi.python.org/pypi/pip).  To install numpy, for
 example, using pip, type `pip install numpy` into the command line of
 your computer.  Note that you may have several Python distributions
 installed on your machine.  Each distribution will have its own
@@ -240,11 +240,11 @@ install packages, e.g. `conda install numpy`.
 
 If you use Windows and have administrator access to your system, you
 can scour the web for the core language and various libraries in
-self-extracting executable (*.exe) format, and install them by running
-them (double click on the *.exe).
+self-extracting executable (\*.exe) format, and install them by
+running them (double click on the \*.exe).
 
-A good resource for up-to-date windows packages for Python is:
-http://www.lfd.uci.edu/~gohlke/pythonlibs
+A good resource for up-to-date windows packages for Python is
+[here](http://www.lfd.uci.edu/~gohlke/pythonlibs)
 
 # Using Python for data analysis in the cloud
 
