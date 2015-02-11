@@ -3,7 +3,7 @@ for data analysis and scientific computing.
 
 ----
 
-## Notebooks for CSCAR Python data management and analysis workshop
+# Notebooks for CSCAR Python data management and analysis workshop
 
 + Basic data struture manipulations ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/a5ar3lppsrl3r62pqkqzkuy9vmjts11c.ipynb))
 
@@ -33,7 +33,7 @@ for data analysis and scientific computing.
 
 ---
 
-## Notebooks for CSCAR Python regression workshop
+# Notebooks for CSCAR Python regression workshop
 
 + Regression analysis of the US house price index ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/vlrazg0wglamfqeqhp4y.ipynb))
 
@@ -45,36 +45,36 @@ for data analysis and scientific computing.
 
 ---
 
-## All notebooks by topic
+# All notebooks by topic
 
-#### Linear regression
+### Linear regression
 
 + Regression analysis of the US house price index ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/vlrazg0wglamfqeqhp4y.ipynb))
 
 + Regression analysis of the NHANES blood pressure data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/qgse7s6x8wl7xzchliti.ipynb))
 
-#### Multiple testing and False Discovery Rates
+### Multiple testing and False Discovery Rates
 
 + Differential expression analysis of gene expression data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/7kh8amlez7bx3qlqa6aa.ipynb))
 
 + Simulation study of FDR methods ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/wtmzw5hmpe1pbb2cug6x.ipynb))
 
-#### Predictive modeling
+### Predictive modeling
 
 + Cross validation and ROC curves for predicting diabetes status ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/aouhn2mci77opm3v89vc.ipynb))
 
-#### Dotplots (forest plots)
+### Dotplots (forest plots)
 
 + GDP by country ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/oxsz9tlg19clhzi422i4.ipynb),
 [data](https://umich.box.com/shared/static/uxpesc1pix3gedyecggp.csv))
 
 + Gas prices ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/oh717lkxczhseep71lao.ipynb))
 
-#### Principal Component Analysis
+### Principal Component Analysis
 
 + PCA of fertility rates by country ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/6m7f4lw9bdog241kqcmb.ipynb))
 
-#### Regularized model fitting
+### Regularized model fitting
 
 + L1 regularized logistic regression example with simulated data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/ck0n67gt1sxaiwj9bp2c.ipynb))
 
@@ -82,7 +82,7 @@ for data analysis and scientific computing.
 
 + L1 linear regression for a diabetes data set ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/rg4sbfag376a5ffbhs47.ipynb))
 
-#### Generalized Linear Models
+### Generalized Linear Models
 
 + Logistic regression power analysis using simulation ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/ttstmmi3ushthhkl0g33.ipynb))
 
@@ -96,11 +96,11 @@ for data analysis and scientific computing.
 
 + Poisson and negative binomial regression analysis of fish abundance data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/0lgt5635uo6rhakjj9d5.ipynb))
 
-#### Scatterplot smoothing (lowess)
+### Scatterplot smoothing (lowess)
 
 + Cross sectional smoothing of NHANES data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/uu936njshiti7ymdh0dp.ipynb))
 
-#### Survival analysis
+### Survival analysis
 
 + Basic proportional hazards regression in Statsmodels, R, and Stata ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/epie6pcdk1rgb10zcd5v.ipynb))
 
@@ -110,17 +110,17 @@ for data analysis and scientific computing.
 
 + Prediction in proportional hazards models ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/r7sz17s96cwvemwfix7b.ipynb))
 
-#### Covariance matrix estimation
+### Covariance matrix estimation
 
 + Simulation study using "corr_nearest" ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/34c0ntt6darq0hn2fua5.ipynb))
 
-#### Linear Mixed Models
+### Linear Mixed Models
 
 + Two examples using both R (LME4) and Statsmodels ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/6tfc1e0q6jincsv5pgfa.ipynb))
 
 + Regression analysis of healthcare spending in Vietnam, using mixed models and GEE.  Stata results provided for comparison ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/lc6uf6dmabmitjbup3yt.ipynb))
 
-#### Generalized Estimating Equations (GEE)
+### Generalized Estimating Equations (GEE)
 
 + GEE analysis of longitudinal CD4 counts ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/zyl08wsmxwoh6ts70v4o.ipynb))
 
