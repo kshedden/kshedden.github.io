@@ -21,11 +21,11 @@ for data analysis and scientific computing.
 
 + US 2012 Medicare payment data
 
-    - Subset the data by state ([notebook](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Medicare/state_subset.ipynb))
+    - Subset the data by state ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/0wfjux0rktzd5n1zbc0ymlpas693fv75.ipynb))
 
-    - Drill-down: identify providers receiving high payments ([notebook](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Medicare/high_payment_providers.ipynb))
+    - Drill-down: identify providers receiving high payments ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/0s4pmb0fkllcqn36exd5b68ppdtq0r6c.ipynb))
 
-    - Compare provider types by state ([notebook](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Medicare/compare_provider_types_state.ipynb))
+    - Compare provider types by state ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/27ws666ci6hqlkngzs7pvdc75w0jqpot.ipynb
 
     - Associations beween provider type and service type ([notebook](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Medicare/provider_service_assoc.ipynb))
 
