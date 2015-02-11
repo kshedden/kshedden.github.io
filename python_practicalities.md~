@@ -1,0 +1,80 @@
+### Installing from a distribution
+
+Installing Python and the libraries used in this workshop from scratch
+is possible, but challenging and time consuming.  The easiest way to
+get up and running quickly with Python is to either use a cloud
+service, or to install a bundled distribution of the scientific Python
+stack.  Here are some Python distributions that are suitable for data
+analytic work:
+
+* Enthought Canopy (https://www.enthought.com/products/canopy)
+
+* Continuum Anaconda (http://continuum.io/downloads)
+
+* Python-xy (https://code.google.com/p/pythonxy/) -- Windows only
+
+* Pyzo (http://www.pyzo.org)
+
+### Installing Python from source
+
+If you use Linux or MacOS, you can install core Python by first
+downloading the source tarball (pythonxxx.tar.gz) from
+(https://www.python.org/downloads), then following these steps (change
+pythonxxx to the specific file name):
+
+```
+tar --xz -xvf pythonxxx.tar.xz
+cd pythonxxx
+./configure
+make
+make install
+```
+
+Note that you need to have root access on the machine to do this.  If
+you do not have root access, it is possible to install everything in
+an arbitrary location by using
+
+```
+./configure --prefix=/path/to/location
+```
+
+If you install Python in a non-standard location you will need to use
+the full path to the executable to launch it (or make an alias in your
+.bashrc or other shell configuration file).
+
+Next you need to install each of the core libraries.  Briefly,
+download an archive file for each library, e.g. numpyxxx.tar.gz, then
+
+```
+gunzip numpyxxx.tar.gz
+tar -xvf  numpyxxx.tar
+cd numpyxxx
+python setup.py install
+```
+
+Note that the gunzip and tar steps may differ depending on the archive
+format (.tar.gz, .tar.bz2, .tar.xz, .zip).  The `python` command in
+step 4 should invoke whichever Python installation on your system you
+want to link to the libraries (i.e. if you have installed several
+Pythons, you need to use the right one here).
+
+An alternative way to install the libraries (but not Python itself) is
+to use pip (https://pypi.python.org/pypi/pip).  We won't provide
+details on this here, see the pip web page for instructions.
+
+### Installing using a package manager
+
+If you use a Linux distribution like Ubuntu, you can use your package
+manager (yum, apt-get, etc.) to download Python (which should already
+be present), and the various libraries (which generally are not part
+of the Linux distribution).
+
+### Installing on Windows using binaries
+
+If you use Windows and have administrator access to your system, you
+can scour the web for the core language and various libraries in
+self-extracting executable (*.exe) format, and install them by running
+them (double click on the *.exe).
+
+A good resource for up-to-date windows packages for Python is:
+http://www.lfd.uci.edu/~gohlke/pythonlibs
