@@ -7,9 +7,11 @@ head = """
 <link rel="stylesheet" type="text/css" href="swiss.css">
 </head>
 <html>
+<body>
 """
 
 foot = """
+</body>
 </html>
 
 """

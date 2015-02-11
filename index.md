@@ -1,6 +1,8 @@
 [Background information](python_practicalities.html) regarding Python
 for data analysis and scientific computing.
 
+----
+
 ## Notebooks for CSCAR Python data management and analysis workshop
 
 + Basic data struture manipulations ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/a5ar3lppsrl3r62pqkqzkuy9vmjts11c.ipynb))

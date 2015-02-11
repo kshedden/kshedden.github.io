@@ -106,23 +106,23 @@ surveyed here.
   command line.
 
 * Integrated Development Environments (IDEs):
-  * [Spyder](http://code.google.com/p/spyderlib)
-  * [IEP](http://iep-project.org)
-  * [Canopy](https://www.enthought.com/products/canopy)
-  * [Idle](https://docs.python.org/2/library/idle.html)
+    * [Spyder](http://code.google.com/p/spyderlib)
+    * [IEP](http://iep-project.org)
+    * [Canopy](https://www.enthought.com/products/canopy)
+    * [Idle](https://docs.python.org/2/library/idle.html)
 
 * [Pdb](https://docs.python.org/2/library/pdb.html) -- a debugging tool
   built into many Python shells and IDE's
 
 * Automatic code checking:
-  * [Pyflakes](https://launchpad.net/pyflakes)
-  * [Pylint](http://www.pylint.org)
-  * [pep8](https://pypi.python.org/pypi/pep8)
-  * [Pychecker](http://pychecker.sourceforge.net)
+    * [Pyflakes](https://launchpad.net/pyflakes)
+    * [Pylint](http://www.pylint.org)
+    * [pep8](https://pypi.python.org/pypi/pep8)
+    * [Pychecker](http://pychecker.sourceforge.net)
 
 * Python environments for text editors -- modes for Emacs and Vim
-  * [Emacs modes](http://www.emacswiki.org/emacs/PythonProgrammingInEmacs)
-  * [Vim modes](https://github.com/klen/python-mode)
+    * [Emacs modes](http://www.emacswiki.org/emacs/PythonProgrammingInEmacs)
+    * [Vim modes](https://github.com/klen/python-mode)
 
 
 # Python libraries
