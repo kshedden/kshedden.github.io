@@ -25,7 +25,7 @@ for data analysis and scientific computing.
 
     - Drill-down: identify providers receiving high payments ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/0s4pmb0fkllcqn36exd5b68ppdtq0r6c.ipynb))
 
-    - Compare provider types by state ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/27ws666ci6hqlkngzs7pvdc75w0jqpot.ipynb
+    - Compare provider types by state ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/27ws666ci6hqlkngzs7pvdc75w0jqpot.ipynb))
 
     - Associations beween provider type and service type ([notebook](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Medicare/provider_service_assoc.ipynb))
 
