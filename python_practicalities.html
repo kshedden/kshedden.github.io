@@ -5,27 +5,27 @@
 <html>
 <body>
 <h1>The core Python language</h1>
+
 <p>There are many excellent Python tutorials on the web.  Some of our
 favorites are:</p>
+
 <ul>
-<li>
-<p><a href="https://docs.python.org/2/tutorial">The official Python tutorial</a></p>
-</li>
-<li>
-<p><a href="http://en.wikibooks.org/wiki/Non-Programmer's_Tutorial_for_Python">Non-Programmer's Tutorial for Python</a></p>
-</li>
-<li>
-<p><a href="https://www.youtube.com/watch?v=bDgD9whDfEY">Two talks from Google I/O</a></p>
-</li>
+<li><p><a href="https://docs.python.org/2/tutorial">The official Python tutorial</a></p></li>
+<li><p><a href="http://en.wikibooks.org/wiki/Non-Programmer's_Tutorial_for_Python">Non-Programmer's Tutorial for Python</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=bDgD9whDfEY">Two talks from Google I/O</a></p></li>
 </ul>
+
 <h3>How is Python related to other numerical computing environments?</h3>
+
 <p>Python is a general-purpose programming language.  It is used for many
 purposes and was not conceived of specifically as a language for data
 management and data analysis (or for any other single purpose).</p>
+
 <p>Python implementations exist for many platforms and hardware
 configurations.  The core language and libraries behave in a highly
 consistent way across a variety of platforms (Windows, Linux, Max,
 many others).</p>
+
 <p>Matlab and <a href="http://cran.org">R</a> are "domain specific languages"
 (DSL's).  They were primarily designed for one purpose.  Scientists
 who like to think of computer programs simply as sequences of
@@ -38,11 +38,14 @@ more advanced data structures (e.g. associative arrays), functions as
 first-class objects, closures, and pass-by-reference semantics (most
 or all of this is available in R and Matlab in some way, but perhaps
 not very naturally or as the default).</p>
+
 <h2>Speed</h2>
+
 <p>Python itself has rather poor numerical performance compared to
 compiled languages like C and Fortran. However Python has a large
 number of excellent libraries that provide very good (even excellent)
 numerical performance on many problems.</p>
+
 <p>Due to the huge community of Python users, the core language and
 interpreter have been heavily optimized for performance.  Interpreted
 Python is generally faster than interpreted R.  However, in any
@@ -51,6 +54,7 @@ Most generic operations in Python (like sorting a list) are
 implemented in C.  These generic operations will take roughly the same
 time to execute in any well-implemented language (e.g. R, Matlab,
 Python, C, Java).</p>
+
 <p>It is possible to write C extensions to Python.  This is made
 particularly easy by using a tool called <a href="http://cython.org">Cython</a>.
 However, most users will rarely if ever need to use Cython.  Due to
@@ -59,13 +63,17 @@ the availability of excellent Python libraries such as
 calculations in such a way that most of the work takes place in the
 library (where time-critical components will already have been written
 in C).</p>
+
 <h2>What is distinctive about Python?</h2>
+
 <p>Python is not (and was not intended to be) an exotic or revolutionary
 language.  It should seem obvious and natural to anyone familiar with
 generic "pseudo-code".  It has a few distinguishing features, most
 notably, the use of indentation rather than braces to define code
 blocks.</p>
+
 <h2>Python 2 versus Python 3</h2>
+
 <p>The Python community is currently progressing through a transition
 from the "2 series" Python implementations to the "<a href="https://docs.python.org/3.0/whatsnew/3.0.html">3
 series</a>" Python
@@ -76,149 +84,153 @@ Nearly all libraries have been substantially modified to work in
 Python 3, and this process is now largely complete.  Version numbers
 within a series (e.g. 3.1 versus 3.2) will generally be compatible,
 except for bug fixes and introductions of new features.</p>
+
 <p>There are many small changes and a few large changes from Python 2 to
 Python 3.  These changes are generally of little consequence to most
 users of Python for scientific purposes.</p>
+
 <p>Many general-purpose Python users switched from version 2 to version 3
 long ago.  Users of Python for scientific research have been slower to
 switch, but as of 2015 are starting to do so in significant numbers.</p>
+
 <h1>Tools for working with Python</h1>
+
 <p>The base Python interpreter has a simple command-line interface.  Many
 more sophisticated tools for working with Python scripts and
 interacting with the interpreter have been developed.  These tools are
 surveyed here.</p>
+
 <ul>
-<li>
-<p><a href="http://ipython.org">IPython</a> -- a shell for working with Python
-  interactively.  This tool provides far more functionality than the
-  basic Python command line.  It can be run in a terminal (providing a
-  text-only interface), and it is a component of many graphical and
-  browser-based environments.</p>
-</li>
-<li>
-<p>The <a href="http://ipython.org/notebook.html">IPython notebook</a> --
-  cell-based manipulation of Python code, runs in a browser.  This is
-  a graphical environment that embeds the standard text-based IPython
-  command line.</p>
-</li>
-<li>
-<p>Integrated Development Environments (IDEs):</p>
+<li><p><a href="http://ipython.org">IPython</a> -- a shell for working with Python
+interactively.  This tool provides far more functionality than the
+basic Python command line.  It can be run in a terminal (providing a
+text-only interface), and it is a component of many graphical and
+browser-based environments.</p></li>
+<li><p>The <a href="http://ipython.org/notebook.html">IPython notebook</a> --
+cell-based manipulation of Python code, runs in a browser.  This is
+a graphical environment that embeds the standard text-based IPython
+command line.</p></li>
+<li><p>Integrated Development Environments (IDEs):</p>
+
 <ul>
 <li><a href="http://code.google.com/p/spyderlib">Spyder</a></li>
 <li><a href="http://iep-project.org">IEP</a></li>
 <li><a href="https://www.enthought.com/products/canopy">Canopy</a></li>
 <li><a href="https://docs.python.org/2/library/idle.html">Idle</a></li>
-</ul>
-</li>
-<li>
-<p><a href="https://docs.python.org/2/library/pdb.html">Pdb</a> -- a debugging tool
-  built into many Python shells and IDE's</p>
-</li>
-<li>
-<p>Automatic code checking:</p>
+</ul></li>
+<li><p><a href="https://docs.python.org/2/library/pdb.html">Pdb</a> -- a debugging tool
+built into many Python shells and IDE's</p></li>
+<li><p>Automatic code checking:</p>
+
 <ul>
 <li><a href="https://launchpad.net/pyflakes">Pyflakes</a></li>
 <li><a href="http://www.pylint.org">Pylint</a></li>
 <li><a href="https://pypi.python.org/pypi/pep8">pep8</a></li>
 <li><a href="http://pychecker.sourceforge.net">Pychecker</a></li>
-</ul>
-</li>
-<li>
-<p>Python environments for text editors -- modes for Emacs and Vim</p>
+</ul></li>
+<li><p>Python environments for text editors -- modes for Emacs and Vim</p>
+
 <ul>
 <li><a href="http://www.emacswiki.org/emacs/PythonProgrammingInEmacs">Emacs modes</a></li>
 <li><a href="https://github.com/klen/python-mode">Vim modes</a></li>
+</ul></li>
 </ul>
-</li>
-</ul>
+
 <h1>Python libraries</h1>
+
 <p>Python itself is not very useful for scientific work.  However by
 using Python together with some powerful libraries, many things become
 possible.</p>
+
 <p>The "scientific Python stack" is a loosely coupled association of the
 core Python interpreter and a collection of powerful libraries.  This
 is in contrast to, say, R and Matlab, where the linear algebra,
 graphics, and other domain-specific capabilities are "baked in" to the
 core language.</p>
+
 <p>An advantage of the loosely coupled approach is that it is possible,
 as needed, to experiment with alternative libraries, even for
 fundamental things like array processing.  A disadvantage of this
 approach is that sometimes the Python syntax does not allow data
 structures to be manipulated in the most natural way.</p>
+
 <p>Here are the libraries we discuss in our workshops:</p>
+
 <ul>
-<li>
-<p><a href="http://pandas.pydata.org">Pandas</a>: data management</p>
-</li>
-<li>
-<p><a href="http://matplotlib.org">Matplotlib</a>: graphics and plotting</p>
-</li>
-<li>
-<p><a href="http://statsmodels.sourceforge.net">Statsmodels</a>: statistical
-  models and data analysis tools</p>
-</li>
-<li>
-<p><a href="http://www.numpy.org">Numpy</a>: array processing and linear algebra,
-  front end to a subset of Lapack, provides matrix algebra
-  functionality similar to Matlab and R (but with some different
-  syntax).</p>
-</li>
-<li>
-<p><a href="http://www.scipy.org">Scipy</a>: numerical routines such as
-  integration, optimization, and special functions</p>
-</li>
+<li><p><a href="http://pandas.pydata.org">Pandas</a>: data management</p></li>
+<li><p><a href="http://matplotlib.org">Matplotlib</a>: graphics and plotting</p></li>
+<li><p><a href="http://statsmodels.sourceforge.net">Statsmodels</a>: statistical
+models and data analysis tools</p></li>
+<li><p><a href="http://www.numpy.org">Numpy</a>: array processing and linear algebra,
+front end to a subset of Lapack, provides matrix algebra
+functionality similar to Matlab and R (but with some different
+syntax).</p></li>
+<li><p><a href="http://www.scipy.org">Scipy</a>: numerical routines such as
+integration, optimization, and special functions</p></li>
 </ul>
+
 <h1>Python installation</h1>
+
 <h2>Installing from a distribution</h2>
+
 <p>Installing Python and its scientific libraries used from scratch is
 possible, but is challenging and time consuming.  The easiest way to
 get up and running quickly with Python is to either use a cloud
 service, or to install a bundled distribution of the scientific Python
 stack.  Here are some Python distributions that are suitable for data
 analytic work:</p>
+
 <ul>
-<li>
-<p><a href="https://www.enthought.com/products/canopy">Enthought Canopy</a></p>
-</li>
-<li>
-<p><a href="http://continuum.io/downloads">Continuum Anaconda</a></p>
-</li>
-<li>
-<p><a href="https://code.google.com/p/pythonxy/">Python-xy</a> -- Windows only</p>
-</li>
-<li>
-<p><a href="http://www.pyzo.org">Pyzo</a></p>
-</li>
+<li><p><a href="https://www.enthought.com/products/canopy">Enthought Canopy</a></p></li>
+<li><p><a href="http://continuum.io/downloads">Continuum Anaconda</a></p></li>
+<li><p><a href="https://code.google.com/p/pythonxy/">Python-xy</a> -- Windows only</p></li>
+<li><p><a href="http://www.pyzo.org">Pyzo</a></p></li>
 </ul>
+
 <h2>Installing Python from source</h2>
+
 <p>If you use Linux or MacOS and have a working compiler like gcc in your
 system, you can install core Python by first downloading the source
 tarball (pythonxxx.tar.gz) from (https://www.python.org/downloads),
 then following these steps (change pythonxxx to the specific file
 name):</p>
-<p><code>tar --xz -xvf pythonxxx.tar.xz
+
+<p><code>
+tar --xz -xvf pythonxxx.tar.xz
 cd pythonxxx
 ./configure
 make
-make install</code></p>
+make install
+</code></p>
+
 <p>Note that you need to have root access on the machine to do this.  If
 you do not have root access, it is possible to install everything in
 an arbitrary location by replacing the configure step above with</p>
-<p><code>./configure --prefix=/path/to/location</code></p>
+
+<p><code>
+./configure --prefix=/path/to/location
+</code></p>
+
 <p>If you install Python in a non-standard location you will need to use
 the full path to the executable to launch it (or make an alias in your
 .bashrc or other shell configuration file).</p>
+
 <p>Next you need to install each of the core libraries.  Briefly,
 download an archive file for each library, e.g. numpyxxx.tar.gz, then</p>
-<p><code>gunzip numpyxxx.tar.gz
+
+<p><code>
+gunzip numpyxxx.tar.gz
 tar -xvf  numpyxxx.tar
 cd numpyxxx
-python setup.py install</code></p>
+python setup.py install
+</code></p>
+
 <p>Note that the gunzip and tar steps may differ depending on the archive
 format (.tar.gz, .tar.bz2, .tar.xz, .zip).  The <code>python</code> command in
 step 4 should invoke whichever Python installation on your system you
 want to link to the libraries (i.e. if you have installed several
 Pythons, you need to use the right one here).</p>
+
 <p>An alternative way to install the libraries (but not Python itself) is
 to use <a href="https://pypi.python.org/pypi/pip">pip</a>.  To install numpy, for
 example, using pip, type <code>pip install numpy</code> into the command line of
@@ -227,16 +239,22 @@ installed on your machine.  Each distribution will have its own
 directory tree and libraries, and its own copy of pip.  You need to
 use the pip that belongs to the python installation you intend to work
 with when installing libraries to be accessed by that installation.</p>
+
 <p>If you are using Anaconda Python, you can use the command <code>conda</code> to
 install packages, e.g. <code>conda install numpy</code>.</p>
+
 <h2>Installing on Windows using binaries</h2>
+
 <p>If you use Windows and have administrator access to your system, you
 can scour the web for the core language and various libraries in
 self-extracting executable (*.exe) format, and install them by
 running them (double click on the *.exe).</p>
+
 <p>A good resource for up-to-date windows packages for Python is
 <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs">here</a></p>
+
 <h1>Using Python for data analysis in the cloud</h1>
+
 <p>Several services allow you to use Python without installing any
 software on your own machine.  These services provide servers on which
 the scientific Python stack is installed.  Users connect to these
@@ -245,34 +263,30 @@ computer with a web browser.  Many people see this approach as the
 future of scientific computing, but the current generation of cloud
 computing services for scientific Python has some limitations.
 Nevertheless, it is usable, especially for training and learning.</p>
+
 <ul>
-<li>
-<p><a href="Sage math cloud">https://cloud.sagemath.com</a> -- this service
-  provides both the IPython notebook and their own notebook format.
-  In addition to Python, they provide R, C, Fortran, and several other
-  tools.  Currently all accounts are free.  We have seen some service
-  degradation in mid-day.</p>
-</li>
-<li>
-<p><a href="Wakari">https://www.wakari.io</a> -- a commercial service provided by
-  Continuum Analytics.  They provide free accounts, but these are
-  often unusable during busy times of day, and their free system is
-  too slow for most real analyses.  However it is quite useful for
-  learning, teaching, and training.  The system exclusively uses the
-  IPython notebook, and does not support languages other than Python.
-  It is fairly easy to configure your own environment (e.g. loading
-  non-standard Python libraries).</p>
-</li>
-<li>
-<p>The SCS servers (scs.itd.umich.edu) -- a U-M internal service, the
-  "old school cloud" is a set of Linux servers.  To use this system,
-  you need to learn how to use ssh to connect to a remote machine, and
-  use terminal tools like text editors (Emacs or Vim).  These machines
-  currently lack an updated Python distribution with all the libraries
-  discussed here, but with some work it is possible to install
-  everything in "user space".</p>
-</li>
+<li><p><a href="Sage math cloud">https://cloud.sagemath.com</a> -- this service
+provides both the IPython notebook and their own notebook format.
+In addition to Python, they provide R, C, Fortran, and several other
+tools.  Currently all accounts are free.  We have seen some service
+degradation in mid-day.</p></li>
+<li><p><a href="Wakari">https://www.wakari.io</a> -- a commercial service provided by
+Continuum Analytics.  They provide free accounts, but these are
+often unusable during busy times of day, and their free system is
+too slow for most real analyses.  However it is quite useful for
+learning, teaching, and training.  The system exclusively uses the
+IPython notebook, and does not support languages other than Python.
+It is fairly easy to configure your own environment (e.g. loading
+non-standard Python libraries).</p></li>
+<li><p>The SCS servers (scs.itd.umich.edu) -- a U-M internal service, the
+"old school cloud" is a set of Linux servers.  To use this system,
+you need to learn how to use ssh to connect to a remote machine, and
+use terminal tools like text editors (Emacs or Vim).  These machines
+currently lack an updated Python distribution with all the libraries
+discussed here, but with some work it is possible to install
+everything in "user space".</p></li>
 </ul>
+
 </body>
 </html>
 
