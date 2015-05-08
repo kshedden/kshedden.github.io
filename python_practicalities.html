@@ -18,8 +18,8 @@ favorites are:</p>
 <h3>How is Python related to other numerical computing environments?</h3>
 
 <p>Python is a general-purpose programming language.  It is used for many
-purposes and was not conceived of specifically as a language for data
-management and data analysis (or for any other single purpose).</p>
+purposes and was not developed specifically as a language for data
+management and analysis.</p>
 
 <p>Python implementations exist for many platforms and hardware
 configurations.  The core language and libraries behave in a highly
@@ -27,24 +27,23 @@ consistent way across a variety of platforms (Windows, Linux, Max,
 many others).</p>
 
 <p>Matlab and <a href="http://cran.org">R</a> are "domain specific languages"
-(DSL's).  They were primarily designed for one purpose.  Scientists
-who like to think of computer programs simply as sequences of
-calculations seem to prefer simple languages that translate
+(DSL's).  They were specifically designed for scientific computing and
+data analysis.  Researchers who think of computer programs as
+sequences of calculations may prefer languages that translate
 mathematical logic directly into computer code.  Matlab and
 <a href="http://julialang.org">Julia</a> reflect this perspective.  On the other
 hand, people who have learned some basic ideas from modern computer
 science often prefer a language that incorporates capabilities such as
 more advanced data structures (e.g. associative arrays), functions as
-first-class objects, closures, and pass-by-reference semantics (most
-or all of this is available in R and Matlab in some way, but perhaps
-not very naturally or as the default).</p>
+first-class objects, closures, and pass-by-reference semantics.</p>
 
 <h2>Speed</h2>
 
-<p>Python itself has rather poor numerical performance compared to
-compiled languages like C and Fortran. However Python has a large
-number of excellent libraries that provide very good (even excellent)
-numerical performance on many problems.</p>
+<p>The core Python language running in the interpreter has rather poor
+numerical performance compared to languages like C and
+Fortran. However Python has a large number of excellent libraries that
+provide very good (even excellent) numerical performance on many
+problems.</p>
 
 <p>Due to the huge community of Python users, the core language and
 interpreter have been heavily optimized for performance.  Interpreted
@@ -53,7 +52,7 @@ interpreted language, complicated operations will be somewhat slow.
 Most generic operations in Python (like sorting a list) are
 implemented in C.  These generic operations will take roughly the same
 time to execute in any well-implemented language (e.g. R, Matlab,
-Python, C, Java).</p>
+Python, C, Java, Julia).</p>
 
 <p>It is possible to write C extensions to Python.  This is made
 particularly easy by using a tool called <a href="http://cython.org">Cython</a>.
@@ -80,25 +79,22 @@ series</a>" Python
 implementations.  Changes in the series number (1, 2, and 3 so far)
 indicate a major break with backward compatibility.  Python 3 scripts
 may not run in Python 2, and Python 2 scripts may not run in Python 3.
-Nearly all libraries have been substantially modified to work in
-Python 3, and this process is now largely complete.  Version numbers
-within a series (e.g. 3.1 versus 3.2) will generally be compatible,
-except for bug fixes and introductions of new features.</p>
+Nearly all libraries have been substantially modified to work in both
+Python 2 and Python 3, and this process is now largely complete.
+Version numbers within a series (e.g. 3.1 versus 3.2) will generally
+be backward compatible, except for bug fixes and introduction of new
+features.</p>
 
 <p>There are many small changes and a few large changes from Python 2 to
-Python 3.  These changes are generally of little consequence to most
-users of Python for scientific purposes.</p>
-
-<p>Many general-purpose Python users switched from version 2 to version 3
-long ago.  Users of Python for scientific research have been slower to
-switch, but as of 2015 are starting to do so in significant numbers.</p>
+Python 3.  Many of these changes are of little consequence to most
+users of Python for scientific purposes.  As of 2015 are finally
+starting to switch to Python 3 in significant numbers.</p>
 
 <h1>Tools for working with Python</h1>
 
 <p>The base Python interpreter has a simple command-line interface.  Many
-more sophisticated tools for working with Python scripts and
-interacting with the interpreter have been developed.  These tools are
-surveyed here.</p>
+powerful tools for working with Python scripts and interacting with
+the interpreter have been developed.  These tools are surveyed here.</p>
 
 <ul>
 <li><p><a href="http://ipython.org">IPython</a> -- a shell for working with Python
@@ -106,10 +102,10 @@ interactively.  This tool provides far more functionality than the
 basic Python command line.  It can be run in a terminal (providing a
 text-only interface), and it is a component of many graphical and
 browser-based environments.</p></li>
-<li><p>The <a href="http://ipython.org/notebook.html">IPython notebook</a> --
-cell-based manipulation of Python code, runs in a browser.  This is
-a graphical environment that embeds the standard text-based IPython
-command line.</p></li>
+<li><p><a href="http://jupyter.org">Jupyter</a> (formerly known as the "IPython
+notebook") -- cell-based manipulation of Python code, runs in a
+browser.  This is an ineractive graphical environment that embeds
+the standard text-based IPython command line.</p></li>
 <li><p>Integrated Development Environments (IDEs):</p>
 
 <ul>
@@ -144,7 +140,7 @@ possible.</p>
 
 <p>The "scientific Python stack" is a loosely coupled association of the
 core Python interpreter and a collection of powerful libraries.  This
-is in contrast to, say, R and Matlab, where the linear algebra,
+design is in contrast to, say, R and Matlab, where the linear algebra,
 graphics, and other domain-specific capabilities are "baked in" to the
 core language.</p>
 
@@ -162,9 +158,8 @@ structures to be manipulated in the most natural way.</p>
 <li><p><a href="http://statsmodels.sourceforge.net">Statsmodels</a>: statistical
 models and data analysis tools</p></li>
 <li><p><a href="http://www.numpy.org">Numpy</a>: array processing and linear algebra,
-front end to a subset of Lapack, provides matrix algebra
-functionality similar to Matlab and R (but with some different
-syntax).</p></li>
+provides matrix algebra functionality similar to Matlab and R (but
+with some different syntax)</p></li>
 <li><p><a href="http://www.scipy.org">Scipy</a>: numerical routines such as
 integration, optimization, and special functions</p></li>
 </ul>
@@ -173,7 +168,7 @@ integration, optimization, and special functions</p></li>
 
 <h2>Installing from a distribution</h2>
 
-<p>Installing Python and its scientific libraries used from scratch is
+<p>Installing Python and its scientific libraries from scratch is
 possible, but is challenging and time consuming.  The easiest way to
 get up and running quickly with Python is to either use a cloud
 service, or to install a bundled distribution of the scientific Python
@@ -191,9 +186,9 @@ analytic work:</p>
 
 <p>If you use Linux or MacOS and have a working compiler like gcc in your
 system, you can install core Python by first downloading the source
-tarball (pythonxxx.tar.gz) from (https://www.python.org/downloads),
-then following these steps (change pythonxxx to the specific file
-name):</p>
+tarball (pythonxxx.tar.gz) from
+<a href="https://www.python.org/downloads">www.python.org</a>, then following
+these steps (change pythonxxx to the specific file name):</p>
 
 <p><code>
 tar --xz -xvf pythonxxx.tar.xz
@@ -243,6 +238,10 @@ with when installing libraries to be accessed by that installation.</p>
 <p>If you are using Anaconda Python, you can use the command <code>conda</code> to
 install packages, e.g. <code>conda install numpy</code>.</p>
 
+<p><code>vitualenv</code> is a utility that allows you to easily maintain multiple
+independent Python environments.  It is also useful if you want to
+maintain only a single environment in a non-standard location.</p>
+
 <h2>Installing on Windows using binaries</h2>
 
 <p>If you use Windows and have administrator access to your system, you
@@ -265,12 +264,11 @@ computing services for scientific Python has some limitations.
 Nevertheless, it is usable, especially for training and learning.</p>
 
 <ul>
-<li><p><a href="Sage math cloud">https://cloud.sagemath.com</a> -- this service
+<li><p><a href="https://cloud.sagemath.com">Sage math cloud</a> -- this service
 provides both the IPython notebook and their own notebook format.
 In addition to Python, they provide R, C, Fortran, and several other
-tools.  Currently all accounts are free.  We have seen some service
-degradation in mid-day.</p></li>
-<li><p><a href="Wakari">https://www.wakari.io</a> -- a commercial service provided by
+tools.  Currently all accounts are free.</p></li>
+<li><p><a href="https://www.wakari.io">Wakari</a> -- a commercial service provided by
 Continuum Analytics.  They provide free accounts, but these are
 often unusable during busy times of day, and their free system is
 too slow for most real analyses.  However it is quite useful for
