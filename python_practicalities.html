@@ -6,36 +6,74 @@
 <body>
 <h1>The core Python language</h1>
 
+<h3>Try it out</h3>
+
+<p>You can run Python in your browser without installing anything onto
+your computer.</p>
+
+<ul>
+<li><p><a href="https://try.jupyter.org">try.jupyter.org</a> requires no sign-up.
+When the page loads, press the "New" button and select either
+"Python 2" or "Python 3"</p></li>
+<li><p><a href="https://could.sagemath.com">cloud.sagemath.com</a> requires you to
+create an account but provides more features</p></li>
+</ul>
+
+<h3>Learning Python</h3>
+
 <p>There are many excellent Python tutorials on the web.  Some of our
 favorites are:</p>
 
 <ul>
 <li><p><a href="https://docs.python.org/2/tutorial">The official Python tutorial</a></p></li>
-<li><p><a href="http://en.wikibooks.org/wiki/Non-Programmer's_Tutorial_for_Python">Non-Programmer's Tutorial for Python</a></p></li>
+<li><p><a href="http://en.wikibooks.org/wiki/Non-Programmer%27s_Tutorial_for_Python_3">Non-Programmer's Tutorial for Python</a></p></li>
 <li><p><a href="https://www.youtube.com/watch?v=bDgD9whDfEY">Two talks from Google I/O</a></p></li>
 </ul>
-
-<h3>How is Python related to other numerical computing environments?</h3>
 
 <p>Python is a general-purpose programming language.  It is used for many
 purposes and was not developed specifically as a language for data
 management and analysis.</p>
+
+<p>Matlab, <a href="http://cran.org">R</a>, and <a href="http://julialang.org">Julia</a> are
+"domain specific languages" (DSL's).  They were specifically designed
+for scientific computing and data analysis.</p>
 
 <p>Python implementations exist for many platforms and hardware
 configurations.  The core language and libraries behave in a highly
 consistent way across a variety of platforms (Windows, Linux, Max,
 many others).</p>
 
-<p>Matlab and <a href="http://cran.org">R</a> are "domain specific languages"
-(DSL's).  They were specifically designed for scientific computing and
-data analysis.  Researchers who think of computer programs as
-sequences of calculations may prefer languages that translate
-mathematical logic directly into computer code.  Matlab and
-<a href="http://julialang.org">Julia</a> reflect this perspective.  On the other
-hand, people who have learned some basic ideas from modern computer
-science often prefer a language that incorporates capabilities such as
-more advanced data structures (e.g. associative arrays), functions as
-first-class objects, closures, and pass-by-reference semantics.</p>
+<h1>Python libraries</h1>
+
+<p>Python itself is not very useful for scientific work.  However by
+using Python together with some powerful libraries, many things become
+possible.</p>
+
+<p>The "scientific Python stack" is a loosely coupled association of the
+core Python interpreter and a collection of powerful libraries.  This
+design is in contrast to, say, R and Matlab, where the linear algebra,
+graphics, and other domain-specific capabilities are "baked in" to the
+core language.</p>
+
+<p>An advantage of the loosely coupled approach is that it is possible,
+as needed, to experiment with alternative libraries, even for
+fundamental things like array processing.  A disadvantage of this
+approach is that sometimes the Python syntax does not allow data
+structures to be manipulated in the most natural way.</p>
+
+<p>Here are the libraries we discuss in our workshops:</p>
+
+<ul>
+<li><p><a href="http://pandas.pydata.org">Pandas</a>: data management</p></li>
+<li><p><a href="http://matplotlib.org">Matplotlib</a>: graphics and plotting</p></li>
+<li><p><a href="http://statsmodels.sourceforge.net">Statsmodels</a>: statistical
+models and data analysis tools</p></li>
+<li><p><a href="http://www.numpy.org">Numpy</a>: array processing and linear algebra,
+provides matrix algebra functionality similar to Matlab and R (but
+with some different syntax)</p></li>
+<li><p><a href="http://www.scipy.org">Scipy</a>: numerical routines such as
+integration, optimization, and special functions</p></li>
+</ul>
 
 <h2>Speed</h2>
 
@@ -130,38 +168,6 @@ built into many Python shells and IDE's</p></li>
 <li><a href="http://www.emacswiki.org/emacs/PythonProgrammingInEmacs">Emacs modes</a></li>
 <li><a href="https://github.com/klen/python-mode">Vim modes</a></li>
 </ul></li>
-</ul>
-
-<h1>Python libraries</h1>
-
-<p>Python itself is not very useful for scientific work.  However by
-using Python together with some powerful libraries, many things become
-possible.</p>
-
-<p>The "scientific Python stack" is a loosely coupled association of the
-core Python interpreter and a collection of powerful libraries.  This
-design is in contrast to, say, R and Matlab, where the linear algebra,
-graphics, and other domain-specific capabilities are "baked in" to the
-core language.</p>
-
-<p>An advantage of the loosely coupled approach is that it is possible,
-as needed, to experiment with alternative libraries, even for
-fundamental things like array processing.  A disadvantage of this
-approach is that sometimes the Python syntax does not allow data
-structures to be manipulated in the most natural way.</p>
-
-<p>Here are the libraries we discuss in our workshops:</p>
-
-<ul>
-<li><p><a href="http://pandas.pydata.org">Pandas</a>: data management</p></li>
-<li><p><a href="http://matplotlib.org">Matplotlib</a>: graphics and plotting</p></li>
-<li><p><a href="http://statsmodels.sourceforge.net">Statsmodels</a>: statistical
-models and data analysis tools</p></li>
-<li><p><a href="http://www.numpy.org">Numpy</a>: array processing and linear algebra,
-provides matrix algebra functionality similar to Matlab and R (but
-with some different syntax)</p></li>
-<li><p><a href="http://www.scipy.org">Scipy</a>: numerical routines such as
-integration, optimization, and special functions</p></li>
 </ul>
 
 <h1>Python installation</h1>
