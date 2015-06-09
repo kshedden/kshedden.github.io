@@ -6,7 +6,7 @@
 <body>
 <h1>Python for statistics and data analysis</h1>
 
-<h3>Try it out</h3>
+<h3>First, try it out</h3>
 
 <p>You can run Python in your browser without installing anything onto
 your computer:</p>
@@ -34,7 +34,7 @@ favorites are:</p>
 
 <p>Python is a general-purpose programming language.  It is used for many
 purposes and was not developed specifically as a language for data
-management and analysis.</p>
+management and analysis.  However it works very well for that purpose.</p>
 
 <p>Matlab, <a href="http://cran.org">R</a>, and <a href="http://julialang.org">Julia</a> are
 "domain specific languages" (DSL's).  They were specifically designed
@@ -42,7 +42,7 @@ for scientific computing and data analysis.</p>
 
 <p>Python implementations exist for many platforms and hardware
 configurations.  The core language and libraries behave in a highly
-consistent way across a variety of platforms (Windows, Linux, Max,
+consistent way across a variety of platforms (Windows, Linux, MacOS,
 many others).</p>
 
 <p>Python is not (and was not intended to be) an exotic or revolutionary
@@ -73,29 +73,16 @@ integration, optimization, and special functions</p></li>
 
 <h3>Numerical performance</h3>
 
-<p>The core Python language running in the interpreter has rather poor
-numerical performance compared to languages like C and
-Fortran. However Python has a large number of excellent libraries that
-provide very good (even excellent) numerical performance on many
-problems.</p>
-
-<p>Due to the huge community of Python users, the core language and
-interpreter have been heavily optimized for performance.  Interpreted
-Python is generally faster than interpreted R.  However, in any
-interpreted language, complicated operations will be somewhat slow.
-Most generic operations in Python (like sorting a list) are
-implemented in C.  These generic operations will take roughly the same
-time to execute in any well-implemented language (e.g. R, Matlab,
-Python, C, Java, Julia).</p>
+<p>Python is an interpreted language like R and Matlab.  It is possible
+to write code that runs reasonably quickly, but it is also possible to
+write code that performs poorly.  There are many ways to write Python
+code that both performs well and is easy to read and maintain.  One
+general principle is to take advantage of libraries like Numpy that
+are implemented in C.</p>
 
 <p>It is possible to write C extensions to Python.  This is made
 particularly easy by using a tool called <a href="http://cython.org">Cython</a>.
-However, most users will rarely if ever need to use Cython.  Due to
-the availability of excellent Python libraries such as
-<a href="http://www.numpy.org">Numpy</a>, it is often possible to express complex
-calculations in such a way that most of the work takes place in the
-library (where time-critical components will already have been written
-in C).</p>
+However, most users will rarely if ever need to use Cython.</p>
 
 <h3>Python 2 versus Python 3</h3>
 
@@ -160,9 +147,9 @@ built into many Python shells and IDE's</p></li>
 <p>Installing Python and its scientific libraries from scratch is
 possible, but is challenging and time consuming.  The easiest way to
 get up and running quickly with Python is to either use a cloud
-service, or to install a bundled distribution of the scientific Python
-stack.  Here are some Python distributions that are suitable for data
-analytic work:</p>
+service, or to install a bundled distribution of the entire scientific
+Python stack.  Here are some Python distributions that are suitable
+for data analytic work:</p>
 
 <ul>
 <li><p><a href="https://www.enthought.com/products/canopy">Enthought Canopy</a></p></li>
@@ -253,6 +240,8 @@ computing services for scientific Python has some limitations.
 Nevertheless, it is usable, especially for training and learning.</p>
 
 <ul>
+<li><p><a href="https://try.jupyter.org">try.jupyter.org</a> this site requires no
+sign-up but may not include a complete set of libraries.</p></li>
 <li><p><a href="https://cloud.sagemath.com">Sage math cloud</a> -- this service
 provides both the IPython notebook and their own notebook format.
 In addition to Python, they provide R, C, Fortran, and several other
