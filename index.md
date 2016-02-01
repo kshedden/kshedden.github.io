@@ -1,50 +1,14 @@
-# CSCAR Python data management and analysis workshop
+# CSCAR Python workshops
 
-[Background information](python_practicalities.html) regarding Python
-for data analysis and scientific computing.
+[Winter 2016 Data Science Skills series](ds_skills_series.html)
 
-+ Basic data struture manipulations ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/a5ar3lppsrl3r62pqkqzkuy9vmjts11c.ipynb))
+[Data management](python_data_management_workshop.html)
 
-+ Daily weather data from the NCDC Global Surface Network
+[Regression](python_regression_workshop.html)
 
-    - Link to [source data](ftp://ftp.ncdc.noaa.gov/pub/data/ghcn/daily/) at NCDC
+[Summer institute in biostatistics](sibs.html)
 
-    - Main analysis ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/yswkatnuxkkc32desjz5a3qnxvmw7m27.ipynb))
-
-+ Spatial analysis of birth and death locations of notable people
-
-    - [Source article](http://www.sciencemag.org/content/345/6196/558.full)
-
-    - Small data conversion script ([notebook](http://nbviewer.ipython.org/github/kshedden/python-workshop/blob/master/Cultural_history/convert_to_csv.ipynb))
-
-    - Main analysis ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/p4yki3aq1f8l6hl3cuhc1a880vk7qtnc.ipynb))
-
-+ US 2012 Medicare payment data
-
-    - Subset the data by state ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/0wfjux0rktzd5n1zbc0ymlpas693fv75.ipynb))
-
-    - Drill-down: identify providers receiving high payments ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/0s4pmb0fkllcqn36exd5b68ppdtq0r6c.ipynb))
-
-    - Compare provider types by state ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/27ws666ci6hqlkngzs7pvdc75w0jqpot.ipynb))
-
-    - Associations beween provider type and service type ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/xhqqcz70rwcorbz4mgqtay6x7qwycpv5.ipynb))
-
----
-
-# CSCAR Python regression workshop
-
-[Background information](python_practicalities.html) regarding Python
-for data analysis and scientific computing.
-
-+ Regression analysis of the US house price index ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/vlrazg0wglamfqeqhp4y.ipynb))
-
-+ Regression analysis of the NHANES blood pressure data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/qgse7s6x8wl7xzchliti.ipynb))
-
-+ Logistic regression analysis of low birth weight data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/20nyq9kap75rhet9eujh.ipynb))
-
-+ Poisson and negative binomial regression analysis of fish abundance data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/0lgt5635uo6rhakjj9d5.ipynb))
-
----
+----
 
 # All notebooks by topic
 
@@ -59,6 +23,8 @@ for data analysis and scientific computing.
 + Differential expression analysis of gene expression data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/7kh8amlez7bx3qlqa6aa.ipynb))
 
 + Simulation study of FDR methods ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/wtmzw5hmpe1pbb2cug6x.ipynb))
+
++ FDR and large scale inference ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/ru434sbwocwkmfw771lin9o8211iel4c.ipynb)
 
 ### Predictive modeling
 
