@@ -22,6 +22,8 @@ Feel free to bring a laptop, but it is not required.
 
 * __February 10__: Graphics and data visualization with Matplotlib and Bokeh
 
+  - [Data visualization overview](http://nbviewer.jupyter.org/urls/umich.box.com/shared/static/0iffa0dcjfmaayvr6bp36x3nrk95flyq.ipynb)
+
 * __February 17__: Pandas case studies (CMS data analyses):
 
     - Subset the data by state ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/0wfjux0rktzd5n1zbc0ymlpas693fv75.ipynb))
@@ -34,9 +36,20 @@ Feel free to bring a laptop, but it is not required.
 
 * __February 24__: Basic statistical analysis with Statsmodels
 
-* __March 9__: Sklearn for predictive analysis and data exploration
+The released Statsmodels package is very old.  If you want to get the latest version,
+the following should work:
+
+`pip install git+git://github.com/statsmodels/statsmodels@master`
+
+* __March 8__: FLUX Geospatial analysis and MPI (R version) -- note special day
+
+* __March 9__: FLUX Geospatial analysis and MPI (Python version)
+
+* __March 16__: SQLite: A small and lightweight database
 
 * __March 23__: Advanced regression analysis (GEE, mixed models and multiple imputation) with Statsmodels
+
+* __March 30__: Sklearn for predictive analysis and data exploration
 
 * __April 6__: Survival analysis with Statsmodels
 
