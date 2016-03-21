@@ -34,15 +34,15 @@ announcement" announcing this capability to the other routers.  This
 is a dynamic process, at any point in time a router can announce that
 it will accept traffic bound for a given subnetwork.</p>
 
-<p>The data for the competition is a text file containing a two-hour
-snapshot of the "routing tables" which capture a subset of the prefix
-announcements sent by the the main internet routers.  It only contains
-prefix announcements received by the MERIT network router, which is
-the router handling traffic to U-M.  Each row of data consists of
-seven fields separated by pipes.  We are only interested in the data
-in fields 6 and 7.  Field 6 identifies a specific subnet.  Field 7 is
-a sequence of router identifiers.  For example, if field 7 contains
-the numbers</p>
+<p>The data for the competition is two text files containing a two-hour
+snapshot of "routing tables".  These tables capture a subset of the
+prefix announcements sent by the the main internet routers.  It only
+contains prefix announcements received by the MERIT network router,
+which is the router handling traffic to U-M.  Each row in the data
+files consists of seven fields separated by pipes.  We are only
+interested in the data in fields 6 and 7.  Field 6 identifies a
+specific subnet.  Field 7 is a sequence of router identifiers.  For
+example, if field 7 contains the numbers</p>
 
 <p>11164 4637 17444 55649</p>
 
@@ -56,14 +56,16 @@ although it is always at the end of the chain of messages.</p>
 <p>You are welcome to analyze this data in any way you see fit.  However
 the main motivation for choosing this particular segment of data is
 that a routing error occurred at one point within this window of time.
-One router mistakenly announced that it could receive traffic from a
-network that is not supposed to handle.  You can try to detect this
-anomalous event, or identify a subset of the data that is likely to
-hold the anomalous event.  We may give more hints later, but for now
-this is all we are revealing about the anomaly.  You can also focus
-your project on other goals, such as describing the characteristics of
-prefix falls and the paths they follow through the main internet
-routers.</p>
+One router incorrectly sent a prefix announcement indicating that it
+could receive traffic from a network that is not supposed to handle.
+You can try to detect this anomalous event, or identify a subset of
+the data that is likely to hold the anomalous event.  We may give more
+hints later, but for now this is all we are revealing about the
+anomaly.</p>
+
+<p>You can also focus your project on other goals, such as describing the
+characteristics of prefix calls and the paths that they follow through
+the main internet routers.</p>
 
 <h2>Contest rules</h2>
 
