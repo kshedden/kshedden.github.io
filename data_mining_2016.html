@@ -6,7 +6,93 @@
 <body>
 <h2>The 2016 U-M Undergraduate Data Mining Competition</h2>
 
-<p>Competition details will be available on March 21st, 2016.</p>
+<p>The competition involves a dataset of internet routing table data.  To
+obtain access to the data, send an email to <code>kshedden@umich.edu</code>.
+Although the data have been anonymized, routing table data and other
+internet traffic data are in general somewhat sensitive.  Therefore,
+you must not distribute these data files or use them for any purpose
+other than this competition.</p>
+
+<h2>Background</h2>
+
+<p>Note: We may provide more background or hints here as the contest
+progresses.</p>
+
+<p>You will need a very basic understanding of how internet routing works
+to understand the data.  The main concept to understand is that the
+internet is divided into subnetworks.  The major internet routers
+(each of which handles huge volumes of traffic directed to thousands
+of users), communicate with each other to facilitate the routing of
+information over the network.  When a router is able to handle data
+headed to a given subnetwork, it sends a "prefix announcement"
+announcing this capability to the other routers.  This is a dynamic
+process, at any point in time a router can announce that it will
+accept traffic bound for a given subnetwork.</p>
+
+<p>The data for the competition is a two-hour snapshot of the "routing
+tables" which capture the main internet routers communicating with
+each other about which subnets they can handle.  It only contains
+prefix announcements received by the MERIT network router, which is the
+router handling traffic to U-M.  Each row of data consists of seven
+fields separated by pipes.  We are only interested in the data in
+fields 6 and 7.  Field 6 identifies a specific subnet.  Field 7 is a
+sequence of router identifiers.  For example, if field 7 contains the
+numbers</p>
+
+<p>11164 4637 17444 55649</p>
+
+<p>this means that router 55649 is announcing that it can now handle
+traffic directed to the subnet given in field 6 of the same row.
+After this prefix announcement is made by router 55649, it is then
+picked up by routers 17444, 4637, 1164, and 237 in sequence.  Router
+237 is the MERIT router and is not listed in field 7 of the data file,
+although it is always at the end of the chain of messages.</p>
+
+<p>You are welcome to analyze this data in any way you see fit.  However
+the main motivation for choosing this particular segment of data is
+that a routing error occurred.  One router mistakenly announced that it
+could receive traffic from a network that is not supposed to handle.
+You can try to identify a way to identify this anomalous event, or at
+least to identify a subset of the data that is likely to hold the
+anomalous event.  We may give more hints later, but for now this is
+all we are revealing.</p>
+
+<h2>Contest rules</h2>
+
+<ul>
+<li><p>All reports must be submitted by email to Gina Cornacchia
+(ginalc@umich.edu) by 9AM on Monday, April 11th.</p></li>
+<li><p>The most important judging criterion is to identify an interesting
+finding in the data, and to support and interpret it in an engaging
+and accessible way.</p></li>
+<li><p>Each participant or team must submit one written report in PDF format.</p></li>
+<li><p>There is no mandated page length, content or structure for the
+report.  A strong report will be focused, coherent, and interesting
+to read, and should be readable by someone who is not an expert data
+scientist or statistician.</p></li>
+<li><p>Use of advanced or specialized techniques will not necessarily be
+viewed as a strength.  If you choose to use advanced techniques be
+sure to motivate and explain each technique in an accessible manner.</p></li>
+<li><p>Use of visualization (e.g. graphs and diagrams) is encouraged.
+Visual materials should be incorporated into the report if possible.
+A separate file containing visual materials will also be accepted.</p></li>
+<li><p>Questions about the contest should be directed to Gina Cornacchia or
+Kerby Shedden.</p></li>
+</ul>
+
+<h2>Prizes and judging</h2>
+
+<p>The reports will be judged by a panel of experts.  Prizes will be
+awarded as follows:</p>
+
+<ul>
+<li><p>First place $500</p></li>
+<li><p>Second place $300</p></li>
+<li><p>Third place $200</p></li>
+</ul>
+
+<p>When a team is awarded a prize, the prize amount will be divided
+equally among the team members.</p>
 
 <p>You can view the page for <a href="data_mining_2015.html">last year's competition</a>.</p>
 
