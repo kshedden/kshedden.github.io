@@ -6,38 +6,39 @@
 <body>
 <h2>The 2016 U-M Undergraduate Data Mining Competition</h2>
 
-<p>The competition involves a dataset of internet routing table data.  To
-obtain access to the data, send an email to <code>kshedden@umich.edu</code>.
-Although the data have been anonymized, routing table data and other
-internet traffic data are in general somewhat sensitive.  Therefore,
-you must not distribute these data files or use them for any purpose
-other than this competition.</p>
+<p>In the competition, you will analyze a dataset consisting of internet
+routing "prefix announcements" to identify faults or possible malicious
+behavior.  To obtain access to the data, send an email to
+<code>kshedden@umich.edu</code>.  Although the data have been anonymized, routing
+table data and other internet traffic data are in general somewhat
+sensitive.  Therefore, you must not distribute these data files or use
+them for any purpose other than this competition.</p>
 
 <h2>Background</h2>
 
-<p>Note: We may provide more background or hints here as the contest
-progresses.</p>
+<p><strong>Note:</strong> <em>We may provide more background or hints here as the contest
+progresses.</em></p>
 
 <p>You will need a very basic understanding of how internet routing works
 to understand the data.  The main concept to understand is that the
 internet is divided into subnetworks.  The major internet routers
-(each of which handles huge volumes of traffic directed to thousands
-of users), communicate with each other to facilitate the routing of
-information over the network.  When a router is able to handle data
-headed to a given subnetwork, it sends a "prefix announcement"
-announcing this capability to the other routers.  This is a dynamic
-process, at any point in time a router can announce that it will
-accept traffic bound for a given subnetwork.</p>
+(each of which handles huge volumes of traffic directed to many
+thousands of users), communicate with each other to facilitate the
+routing of packets of data over the network.  When a router is able to
+handle data that is headed to a given subnetwork, it sends a "prefix
+announcement" announcing this capability to the other routers.  This
+is a dynamic process, at any point in time a router can announce that
+it will accept traffic bound for a given subnetwork.</p>
 
-<p>The data for the competition is a two-hour snapshot of the "routing
-tables" which capture the main internet routers communicating with
-each other about which subnets they can handle.  It only contains
-prefix announcements received by the MERIT network router, which is the
-router handling traffic to U-M.  Each row of data consists of seven
-fields separated by pipes.  We are only interested in the data in
-fields 6 and 7.  Field 6 identifies a specific subnet.  Field 7 is a
-sequence of router identifiers.  For example, if field 7 contains the
-numbers</p>
+<p>The data for the competition is a text file containing a two-hour
+snapshot of the "routing tables" which capture a subset of the prefix
+announcements sent by the the main internet routers.  It only contains
+prefix announcements received by the MERIT network router, which is
+the router handling traffic to U-M.  Each row of data consists of
+seven fields separated by pipes.  We are only interested in the data
+in fields 6 and 7.  Field 6 identifies a specific subnet.  Field 7 is
+a sequence of router identifiers.  For example, if field 7 contains
+the numbers</p>
 
 <p>11164 4637 17444 55649</p>
 
@@ -50,12 +51,15 @@ although it is always at the end of the chain of messages.</p>
 
 <p>You are welcome to analyze this data in any way you see fit.  However
 the main motivation for choosing this particular segment of data is
-that a routing error occurred.  One router mistakenly announced that it
-could receive traffic from a network that is not supposed to handle.
-You can try to identify a way to identify this anomalous event, or at
-least to identify a subset of the data that is likely to hold the
-anomalous event.  We may give more hints later, but for now this is
-all we are revealing.</p>
+that a routing error occurred at one point within this window of time.
+One router mistakenly announced that it could receive traffic from a
+network that is not supposed to handle.  You can try to detect this
+anomalous event, or identify a subset of the data that is likely to
+hold the anomalous event.  We may give more hints later, but for now
+this is all we are revealing about the anomaly.  You can also focus
+your project on other goals, such as describing the characteristics of
+prefix falls and the paths they follow through the main internet
+routers.</p>
 
 <h2>Contest rules</h2>
 
