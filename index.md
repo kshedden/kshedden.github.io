@@ -115,27 +115,27 @@ http://nbviewer.ipython.org/urls/umich.box.com/shared/static/ir0bnkup9rywmqd54zv
 
 ### Data management with Pandas
 
-  - [Data structures in Python](http://nbviewer.jupyter.org/urls/umich.box.com/shared/static/gkg1m0zhk7m6eniaf2emcikbvteppxi6.ipynb)
++ [Data structures in Python](http://nbviewer.jupyter.org/urls/umich.box.com/shared/static/gkg1m0zhk7m6eniaf2emcikbvteppxi6.ipynb)
 
 ### Graphics and data visualization with Matplotlib and Bokeh
 
-  - [Data visualization overview](http://nbviewer.jupyter.org/urls/umich.box.com/shared/static/0iffa0dcjfmaayvr6bp36x3nrk95flyq.ipynb)
++ [Data visualization overview](http://nbviewer.jupyter.org/urls/umich.box.com/shared/static/0iffa0dcjfmaayvr6bp36x3nrk95flyq.ipynb)
 
 ### Pandas case studies (CMS data analyses):
 
-    - Subset the data by state ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/0wfjux0rktzd5n1zbc0ymlpas693fv75.ipynb))
++ Subset the data by state ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/0wfjux0rktzd5n1zbc0ymlpas693fv75.ipynb))
 
-    - Drill-down: identify providers receiving high payments ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/0s4pmb0fkllcqn36exd5b68ppdtq0r6c.ipynb))
++ Drill-down: identify providers receiving high payments ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/0s4pmb0fkllcqn36exd5b68ppdtq0r6c.ipynb))
 
-    - Compare provider types by state ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/27ws666ci6hqlkngzs7pvdc75w0jqpot.ipynb))
++ Compare provider types by state ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/27ws666ci6hqlkngzs7pvdc75w0jqpot.ipynb))
 
-    - Associations beween provider type and service type ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/xhqqcz70rwcorbz4mgqtay6x7qwycpv5.ipynb))
++ Associations beween provider type and service type ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/xhqqcz70rwcorbz4mgqtay6x7qwycpv5.ipynb))
 
 
 ### Survival analysis with Statsmodels
 
-    - Survival analysis of NHANES 3 data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/elrb0pu8djecxgf17ozahd7gsqzoy1zg.ipynb))
++ Survival analysis of NHANES 3 data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/elrb0pu8djecxgf17ozahd7gsqzoy1zg.ipynb))
 
 ### Sklearn
 
-    - [notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/gq00pqpc4wxobpf3qkp09nz5kzi34zpz.ipynb)
++ [notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/gq00pqpc4wxobpf3qkp09nz5kzi34zpz.ipynb)
