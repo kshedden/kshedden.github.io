@@ -1,16 +1,6 @@
-# CSCAR Python workshops
+# CSCAR workshop materials
 
-[Winter 2016 Data Science Skills series](ds_skills_series.html)
-
-[Data management](python_data_management_workshop.html)
-
-[Regression](python_regression_workshop.html)
-
-[Summer institute in biostatistics](sibs.html)
-
-----
-
-# All notebooks by topic
+Python notebooks by topic:
 
 ### Linear regression
 
@@ -69,6 +59,8 @@
 
 ### Survival analysis
 
++ Survival analysis of NHANES 3 data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/elrb0pu8djecxgf17ozahd7gsqzoy1zg.ipynb))
+
 + Basic proportional hazards regression in Statsmodels, R, and Stata ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/epie6pcdk1rgb10zcd5v.ipynb))
 
 + Diagnostics for proportional hazards regression models ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/hyw87uy0cgc1bi9epg0t.ipynb))
@@ -91,7 +83,8 @@
 
 + GEE analysis of longitudinal CD4 counts ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/zyl08wsmxwoh6ts70v4o.ipynb))
 
-+ GEE Poisson model for repeated measures of epileptic seizure counts ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/ir0bnkup9rywmqd54zvm.ipynb))
++ GEE Poisson model for repeated measures of epileptic seizure counts ([notebook](
+http://nbviewer.ipython.org/urls/umich.box.com/shared/static/ir0bnkup9rywmqd54zvm.ipynb))
 
 + GEE Gaussian and Poisson models for repeated measures of disease incidence in herds of cattle ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/zyajjg1dxf2nmamztheg.ipynb),
 [data set](https://umich.box.com/shared/static/sjbisw92zmljjfxkp8fp.csv))
@@ -111,3 +104,38 @@
 + GEE simulation study for regression with nominal data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/wwwlg3z8as0layod22lx.ipynb))
 
 + Baseline adjustment and GEE ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/jiua9do8pwqafvnhce31chmv1c9ym63i.ipynb))
+
+### Missing data (MICE multiple imputation)
+
++ Chain data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/mv2wvdcicwl4ww1kamp8lkb7fahrnl7m.ipynb))
+
++ Survival analysis ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/yn2cttfg479wm2dmfnwnvopwbswgqkuy.ipynb))
+
++ Simulation study ([notebook](http://nbviewer.ipython.org/urls/uumich.box.com/shared/static/5pcv0tbj302pxk7lpbalshlqddmmlk3m.ipynb))
+
+### Data management with Pandas
+
+  - [Data structures in Python](http://nbviewer.jupyter.org/urls/umich.box.com/shared/static/gkg1m0zhk7m6eniaf2emcikbvteppxi6.ipynb)
+
+### Graphics and data visualization with Matplotlib and Bokeh
+
+  - [Data visualization overview](http://nbviewer.jupyter.org/urls/umich.box.com/shared/static/0iffa0dcjfmaayvr6bp36x3nrk95flyq.ipynb)
+
+### Pandas case studies (CMS data analyses):
+
+    - Subset the data by state ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/0wfjux0rktzd5n1zbc0ymlpas693fv75.ipynb))
+
+    - Drill-down: identify providers receiving high payments ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/0s4pmb0fkllcqn36exd5b68ppdtq0r6c.ipynb))
+
+    - Compare provider types by state ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/27ws666ci6hqlkngzs7pvdc75w0jqpot.ipynb))
+
+    - Associations beween provider type and service type ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/xhqqcz70rwcorbz4mgqtay6x7qwycpv5.ipynb))
+
+
+### Survival analysis with Statsmodels
+
+    - Survival analysis of NHANES 3 data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/elrb0pu8djecxgf17ozahd7gsqzoy1zg.ipynb))
+
+### Sklearn
+
+    - [notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/gq00pqpc4wxobpf3qkp09nz5kzi34zpz.ipynb)

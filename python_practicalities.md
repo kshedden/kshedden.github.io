@@ -1,98 +1,110 @@
-# The core Python language
+# Python for statistics and data analysis
+
+### First, try it out
+
+You can run Python in your browser without installing anything onto
+your computer:
+
+* [try.jupyter.org](https://try.jupyter.org) requires no sign-up.
+  When the page loads, press the "New" button and select either
+  "Python 2" or "Python 3"
+
+* [cloud.sagemath.com](https://cloud.sagemath.com) requires you to
+  create an account but provides a few more features
+
+
+If you want to install Python and a collection of libraries for data
+analysis onto your computer, one relatively simple approach is to use
+[anaconda](http://continuum.io/downloads).  See below for other
+options.
+
+
+### Learning Python
 
 There are many excellent Python tutorials on the web.  Some of our
 favorites are:
 
 * [The official Python tutorial](https://docs.python.org/2/tutorial)
 
-* [Non-Programmer's Tutorial for Python](http://en.wikibooks.org/wiki/Non-Programmer's_Tutorial_for_Python)
+* [Non-Programmer's Tutorial for Python](http://en.wikibooks.org/wiki/Non-Programmer%27s_Tutorial_for_Python_3)
 
 * [Two talks from Google I/O](https://www.youtube.com/watch?v=bDgD9whDfEY)
 
-### How is Python related to other numerical computing environments?
+### About Python
 
-Python is a general-purpose programming language.  It is used for many
-purposes and was not conceived of specifically as a language for data
-management and data analysis (or for any other single purpose).
+Python is a general-purpose programming language.  It was not
+developed specifically as a language for data management and analysis,
+but it works very well for that purpose.
+
+In contrast, Matlab, [R](http://cran.org), and
+[Julia](http://julialang.org) are "domain specific languages" (DSL's).
+They were specifically designed for scientific computing and data
+analysis.
 
 Python implementations exist for many platforms and hardware
 configurations.  The core language and libraries behave in a highly
-consistent way across a variety of platforms (Windows, Linux, Max,
+consistent way across a variety of platforms (Windows, Linux, MacOS,
 many others).
 
-Matlab and [R](http://cran.org) are "domain specific languages"
-(DSL's).  They were primarily designed for one purpose.  Scientists
-who like to think of computer programs simply as sequences of
-calculations seem to prefer simple languages that translate
-mathematical logic directly into computer code.  Matlab and
-[Julia](http://julialang.org) reflect this perspective.  On the other
-hand, people who have learned some basic ideas from modern computer
-science often prefer a language that incorporates capabilities such as
-more advanced data structures (e.g. associative arrays), functions as
-first-class objects, closures, and pass-by-reference semantics (most
-or all of this is available in R and Matlab in some way, but perhaps
-not very naturally or as the default).
+Python is not an exotic or revolutionary language.  It should seem
+obvious and natural to anyone familiar with generic "pseudo-code".  It
+has a few distinguishing features, most notably, the use of
+indentation rather than braces to define code blocks.
 
-## Speed
+### Python libraries
 
-Python itself has rather poor numerical performance compared to
-compiled languages like C and Fortran. However Python has a large
-number of excellent libraries that provide very good (even excellent)
-numerical performance on many problems.
+Python itself is not very useful for scientific work.  However by
+using Python together with some powerful libraries, many things become
+possible.
 
-Due to the huge community of Python users, the core language and
-interpreter have been heavily optimized for performance.  Interpreted
-Python is generally faster than interpreted R.  However, in any
-interpreted language, complicated operations will be somewhat slow.
-Most generic operations in Python (like sorting a list) are
-implemented in C.  These generic operations will take roughly the same
-time to execute in any well-implemented language (e.g. R, Matlab,
-Python, C, Java).
+Here are the libraries that we discuss in our workshops:
+
+* [Pandas](http://pandas.pydata.org): data management
+
+* [Matplotlib](http://matplotlib.org): graphics and plotting
+
+* [Statsmodels](http://statsmodels.sourceforge.net): statistical
+  models and data analysis tools
+
+* [Numpy](http://www.numpy.org): array processing and linear algebra,
+  provides matrix algebra functionality similar to Matlab and R (but
+  with some different syntax)
+
+* [Scipy](http://www.scipy.org): numerical routines such as
+  integration, optimization, and special functions
+
+### Numerical performance
+
+Python is an interpreted language like R and Matlab.  It is possible
+to write code that runs reasonably quickly, but it is also possible to
+write code that performs poorly.  There are many ways to write Python
+code that both performs well and is easy to read and maintain.  One
+general principle for achieving good performance is to take advantage
+of libraries like Numpy that are implemented in C.
 
 It is possible to write C extensions to Python.  This is made
 particularly easy by using a tool called [Cython](http://cython.org).
-However, most users will rarely if ever need to use Cython.  Due to
-the availability of excellent Python libraries such as
-[Numpy](http://www.numpy.org), it is often possible to express complex
-calculations in such a way that most of the work takes place in the
-library (where time-critical components will already have been written
-in C).
+However, most users will rarely if ever need to use Cython.
 
-## What is distinctive about Python?
-
-Python is not (and was not intended to be) an exotic or revolutionary
-language.  It should seem obvious and natural to anyone familiar with
-generic "pseudo-code".  It has a few distinguishing features, most
-notably, the use of indentation rather than braces to define code
-blocks.
-
-## Python 2 versus Python 3
+### Python 2 versus Python 3
 
 The Python community is currently progressing through a transition
 from the "2 series" Python implementations to the "[3
 series](https://docs.python.org/3.0/whatsnew/3.0.html)" Python
-implementations.  Changes in the series number (1, 2, and 3 so far)
-indicate a major break with backward compatibility.  Python 3 scripts
-may not run in Python 2, and Python 2 scripts may not run in Python 3.
-Nearly all libraries have been substantially modified to work in
-Python 3, and this process is now largely complete.  Version numbers
-within a series (e.g. 3.1 versus 3.2) will generally be compatible,
-except for bug fixes and introductions of new features.
+implementations.  Python 3 scripts may not run in Python 2, and Python
+2 scripts may not run in Python 3.  Nearly all libraries have been
+substantially modified to work in both Python 2 and Python 3, and this
+process is now largely complete.
 
 There are many small changes and a few large changes from Python 2 to
-Python 3.  These changes are generally of little consequence to most
+Python 3.  Many of these changes are of little consequence to most
 users of Python for scientific purposes.
 
-Many general-purpose Python users switched from version 2 to version 3
-long ago.  Users of Python for scientific research have been slower to
-switch, but as of 2015 are starting to do so in significant numbers.
-
-# Tools for working with Python
+### Tools for working with Python
 
 The base Python interpreter has a simple command-line interface.  Many
-more sophisticated tools for working with Python scripts and
-interacting with the interpreter have been developed.  These tools are
-surveyed here.
+powerful tools for working with Python scripts and interacting with
+the interpreter have been developed.  These tools are surveyed here.
 
 * [IPython](http://ipython.org) -- a shell for working with Python
   interactively.  This tool provides far more functionality than the
@@ -100,10 +112,10 @@ surveyed here.
   text-only interface), and it is a component of many graphical and
   browser-based environments.
 
-* The [IPython notebook](http://ipython.org/notebook.html) --
-  cell-based manipulation of Python code, runs in a browser.  This is
-  a graphical environment that embeds the standard text-based IPython
-  command line.
+* [Jupyter](http://jupyter.org) (formerly known as the "IPython
+  notebook") -- cell-based manipulation of Python code, runs in a
+  browser.  This is an ineractive graphical environment that embeds
+  the standard text-based IPython command line.
 
 * Integrated Development Environments (IDEs):
     * [Spyder](http://code.google.com/p/spyderlib)
@@ -125,52 +137,16 @@ surveyed here.
     * [Vim modes](https://github.com/klen/python-mode)
 
 
-# Python libraries
-
-Python itself is not very useful for scientific work.  However by
-using Python together with some powerful libraries, many things become
-possible.
-
-The "scientific Python stack" is a loosely coupled association of the
-core Python interpreter and a collection of powerful libraries.  This
-is in contrast to, say, R and Matlab, where the linear algebra,
-graphics, and other domain-specific capabilities are "baked in" to the
-core language.
-
-An advantage of the loosely coupled approach is that it is possible,
-as needed, to experiment with alternative libraries, even for
-fundamental things like array processing.  A disadvantage of this
-approach is that sometimes the Python syntax does not allow data
-structures to be manipulated in the most natural way.
-
-Here are the libraries we discuss in our workshops:
-
-* [Pandas](http://pandas.pydata.org): data management
-
-* [Matplotlib](http://matplotlib.org): graphics and plotting
-
-* [Statsmodels](http://statsmodels.sourceforge.net): statistical
-  models and data analysis tools
-
-* [Numpy](http://www.numpy.org): array processing and linear algebra,
-  front end to a subset of Lapack, provides matrix algebra
-  functionality similar to Matlab and R (but with some different
-  syntax).
-
-* [Scipy](http://www.scipy.org): numerical routines such as
-  integration, optimization, and special functions
-
-
 # Python installation
 
 ## Installing from a distribution
 
-Installing Python and its scientific libraries used from scratch is
+Installing Python and its scientific libraries from scratch is
 possible, but is challenging and time consuming.  The easiest way to
 get up and running quickly with Python is to either use a cloud
-service, or to install a bundled distribution of the scientific Python
-stack.  Here are some Python distributions that are suitable for data
-analytic work:
+service, or to install a bundled distribution of the entire scientific
+Python stack.  Here are some Python distributions that are suitable
+for data analytic work:
 
 * [Enthought Canopy](https://www.enthought.com/products/canopy)
 
@@ -184,9 +160,9 @@ analytic work:
 
 If you use Linux or MacOS and have a working compiler like gcc in your
 system, you can install core Python by first downloading the source
-tarball (pythonxxx.tar.gz) from (https://www.python.org/downloads),
-then following these steps (change pythonxxx to the specific file
-name):
+tarball (pythonxxx.tar.gz) from
+[www.python.org](https://www.python.org/downloads), then following
+these steps (change pythonxxx to the specific file name):
 
 ```
 tar --xz -xvf pythonxxx.tar.xz
@@ -236,6 +212,10 @@ with when installing libraries to be accessed by that installation.
 If you are using Anaconda Python, you can use the command `conda` to
 install packages, e.g. `conda install numpy`.
 
+`vitualenv` is a utility that allows you to easily maintain multiple
+independent Python environments.  It is also useful if you want to
+maintain only a single environment in a non-standard location.
+
 ## Installing on Windows using binaries
 
 If you use Windows and have administrator access to your system, you
@@ -257,13 +237,15 @@ future of scientific computing, but the current generation of cloud
 computing services for scientific Python has some limitations.
 Nevertheless, it is usable, especially for training and learning.
 
-* [https://cloud.sagemath.com](Sage math cloud) -- this service
+* [try.jupyter.org](https://try.jupyter.org) this site requires no
+  sign-up but may not include a complete set of libraries.
+
+* [Sage math cloud](https://cloud.sagemath.com) -- this service
   provides both the IPython notebook and their own notebook format.
   In addition to Python, they provide R, C, Fortran, and several other
-  tools.  Currently all accounts are free.  We have seen some service
-  degradation in mid-day.
+  tools.  Currently all accounts are free.
 
-* [https://www.wakari.io](Wakari) -- a commercial service provided by
+* [Wakari](https://www.wakari.io) -- a commercial service provided by
   Continuum Analytics.  They provide free accounts, but these are
   often unusable during busy times of day, and their free system is
   too slow for most real analyses.  However it is quite useful for

@@ -36,22 +36,31 @@ Feel free to bring a laptop, but it is not required.
 
 * __February 24__: Basic statistical analysis with Statsmodels
 
-The released Statsmodels package is very old.  If you want to get the latest version,
-the following should work:
+The released Statsmodels package is very old.  If you want to get the
+latest (development) version of Statsmodels, the following should
+work:
 
 `pip install git+git://github.com/statsmodels/statsmodels@master`
 
-* __March 8__: FLUX Geospatial analysis and MPI (R version) -- note special day
+The documentation for the development version of Statsmodels is here:
 
-* __March 9__: FLUX Geospatial analysis and MPI (Python version)
+http://www.statsmodels.org/dev/index.html
+
+* __March 8__: FLUX Geospatial analysis and MPI (R version) -- note special day, starts at 2pm
+
+* __March 9__: FLUX Geospatial analysis and MPI (Python version) -- note special time, starts at 2pm
 
 * __March 16__: SQLite: A small and lightweight database
 
 * __March 23__: Advanced regression analysis (GEE, mixed models and multiple imputation) with Statsmodels
 
-* __March 30__: Sklearn for predictive analysis and data exploration
-
 * __April 6__: Survival analysis with Statsmodels
+
+    - Survival analysis of NHANES 3 data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/elrb0pu8djecxgf17ozahd7gsqzoy1zg.ipynb))
+
+* __April 20__: Sklearn for predictive analysis and data exploration
+
+    - [notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/gq00pqpc4wxobpf3qkp09nz5kzi34zpz.ipynb)
 
 
 Additional workshops will be scheduled on the following topics, dates

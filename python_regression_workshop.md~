@@ -1,0 +1,12 @@
+# CSCAR Python regression workshop
+
+[Background information](python_practicalities.html) regarding Python
+for data analysis and scientific computing.
+
++ Regression analysis of the US house price index ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/vlrazg0wglamfqeqhp4y.ipynb))
+
++ Regression analysis of the NHANES blood pressure data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/qgse7s6x8wl7xzchliti.ipynb))
+
++ Logistic regression analysis of low birth weight data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/20nyq9kap75rhet9eujh.ipynb))
+
++ Poisson and negative binomial regression analysis of fish abundance data ([notebook](http://nbviewer.ipython.org/urls/umich.box.com/shared/static/0lgt5635uo6rhakjj9d5.ipynb))

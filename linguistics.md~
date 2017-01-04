@@ -1,0 +1,9 @@
+# Estimating the mean from an "iid" sample
+
+(iid means "independent and identically distributed")
+
+```
+data = c(3, 1, 2, 4, 2)
+mn = mean(data)
+se = std(data) / sqrt(length(data))
+```

@@ -1,0 +1,135 @@
+
+<head>
+<link rel="stylesheet" type="text/css" href="swiss.css">
+</head>
+<html>
+<body>
+<h1>Estimating the mean from an "iid" sample</h1>
+
+<p>(iid means "independent and identically distributed")</p>
+
+<p>```
+data = c(3, 1, 2, 4, 2)</p>
+
+<h1>The sample mean</h1>
+
+<p>mn = mean(data)</p>
+
+<h1>The "standard error of the mean"</h1>
+
+<p>se = sd(data) / sqrt(length(data))
+```</p>
+
+<p>The estimated mean is "on average" <code>se</code> units away from the population mean.</p>
+
+<p>Let's see what we get with a simulated data set whose population mean
+is known to be zero:</p>
+
+<p><code>
+data = rnorm(20)
+mn = mean(data)
+se = sd(data) / sqrt(length(data))
+</code></p>
+
+<p>To really understand what is going on, we can do a "simulation study"
+in which we repeat the random data generation many times and
+calculate the statistics for each generated data set.</p>
+
+<p><code>
+mn_all = NULL
+se_all = NULL
+for (i in 1:1000) {
+    data = rnorm(20)
+    mn = mean(data)
+    se = sd(data) / sqrt(20)
+    mn_all = c(mn_all, mn)
+    se_all = c(se_all, se)
+}
+</code></p>
+
+<p>The average of the averages is close to the population mean, which is zero:</p>
+
+<p><code>
+mean(mn_all)
+</code></p>
+
+<p>The average of the SE values is close to 1/sqrt(20), which is its
+exact value:</p>
+
+<p><code>
+mean(se_all)
+</code></p>
+
+<p>The sample mean value are on average SE units away from their true value:</p>
+
+<p><code>
+sqrt(mean(mn_all^2))
+</code></p>
+
+<h1>Repeated measures</h1>
+
+<p>What if our data collection involves collecting repeated measurements
+on each study subject?  How does this affect the behavior of the
+sample mean?</p>
+
+<p>Typically if we have repeated measures on subjects, there are "subject
+effects" that uniquely influence the values of each individual
+subject.</p>
+
+<p><code>
+subeffects = rnorm(20)
+subeffects = rep(subeffects, each=2)
+data = subeffects + rnorm(40)
+mn = mean(data)
+se = sd(data) / sqrt(40)
+</code></p>
+
+<p>Now we can repeat our simulation study to see how the sample mean behaves:</p>
+
+<p><code>
+mn_all = NULL
+se_all = NULL
+for (i in 1:1000) {
+    subeffects = rnorm(20)
+    subeffects = rep(subeffects, each=2)
+    data = subeffects + rnorm(40)
+    mn = mean(data)
+    se = sd(data) / sqrt(40)
+    mn_all = c(mn_all, mn)
+    se_all = c(se_all, se)
+}
+</code></p>
+
+<h1>Longitudinal data</h1>
+
+<p>```
+tm = c(0, 1, 2, 3)
+icept = rnorm(300)
+slope = rnorm(300)</p>
+
+<p>```</p>
+
+<h1>Variance components</h1>
+
+<p>wmat = array(0, c(100, 4))
+ii = seq(100)
+wmat[,1] = 1<em>((ii %% 4) == 0)
+wmat[,2] = 1</em>((ii %% 4) == 1)
+wmat[,3] = 1<em>((ii %% 4) == 2)
+wmat[,4] = 1</em>((ii %% 4) == 3)</p>
+
+<p>smat = array(0, c(100, 20))
+ii = seq(100)
+wmat[,1] = 1<em>((ii %% 4) == 0)
+wmat[,2] = 1</em>((ii %% 4) == 1)
+wmat[,3] = 1<em>((ii %% 4) == 2)
+wmat[,4] = 1</em>((ii %% 4) == 3)</p>
+
+<p>ii = seq(20) %% 4
+model.matrix(~0+as.factor(ii))</p>
+
+<h1>Crossed effects</h1>
+
+</body>
+</html>
+

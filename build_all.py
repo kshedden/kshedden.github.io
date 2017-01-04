@@ -1,4 +1,4 @@
-import markdown
+import markdown2
 import os
 
 
@@ -25,7 +25,7 @@ for md_file in md_files:
 
     html_file = md_file.replace(".md", ".html")
 
-    html = markdown.markdown(md_contents)
+    html = markdown2.markdown(md_contents, extras=["tables"])
 
     out = open(html_file, "w")
     out.write(head)
